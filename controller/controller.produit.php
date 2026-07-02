@@ -34,7 +34,11 @@ function saveProduct(){
 
 }
 
-
+ function listerProduits(array $products) : void {
+        foreach ($products as $product){
+            echo "Libellé: {$product["libele"]}\n";
+        }
+    }
 
 function archiverProduit (): void {
     global $productsArchived , $products;
